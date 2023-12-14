@@ -2,13 +2,13 @@ import {createFilter} from 'rollup-pluginutils';
 import {minify} from 'html-minifier-terser';
 
 /**
- * @param {import('./index').Options} options
+ * @param {import('./types').Options} options
  * @returns {import('./types').Plugin} Rollup plugin object
  */
 function minifyHtml(options = {}) {
 	if (!options.filter) {
 		options.filter = createFilter(
-			options.include ?? './src/**/*.{html}',
+			options.include ?? './**/*.{html}',
 			options.exclude
 		);
 	}

@@ -1,12 +1,13 @@
 {
 	"name": "@vdegenne/rollup-plugin-minify-html",
-	"version": "1.0.0",
+	"version": "1.0.3",
 	"description": "minify html files",
 	"type": "module",
 	"peerDependencies": {
 		"rollup": "^4.0.0"
 	},
 	"devDependencies": {
+		"@types/html-minifier-terser": "^7.0.2",
 		"rollup": "^4.9.0"
 	},
 	"dependencies": {
@@ -15,6 +16,8 @@
 	},
 	"files": [
 		"index.js",
-		"index.d.ts"
-	]
+		"index.d.ts",
+		"types.d.ts"
+	],
+	"main": "index.js"
 }
